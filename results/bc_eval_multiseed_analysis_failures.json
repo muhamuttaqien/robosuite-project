@@ -1,0 +1,253 @@
+{
+  "method": "heuristic categorization from measured proximity, grasp flag, lift and hold duration; not verified physical root causes",
+  "thresholds": {
+    "near_distance_m": 0.085,
+    "lift_height_m": 0.1,
+    "hold_steps": 10
+  },
+  "total_failures": 19,
+  "failure_categories": {
+    "grasp_detected_insufficient_lift": 7,
+    "reached_but_no_grasp_detected": 9,
+    "lifted_but_not_held_long_enough": 3
+  },
+  "failed_episodes": [
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.06585,
+      "min_eef_red_distance_m": 0.0245,
+      "grasped_steps": 13,
+      "max_consecutive_lift_grasp_steps": 0,
+      "return_value": 0.0,
+      "failure_reason": "grasp_detected_insufficient_lift",
+      "seed": 2000,
+      "episode": 3,
+      "video": "results/bc_eval_multiseed_media/videos/failure_1_seed2000_ep003.mp4"
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.0,
+      "min_eef_red_distance_m": 0.02567,
+      "grasped_steps": 0,
+      "max_consecutive_lift_grasp_steps": 0,
+      "return_value": 0.0,
+      "failure_reason": "reached_but_no_grasp_detected",
+      "seed": 2000,
+      "episode": 8,
+      "video": "results/bc_eval_multiseed_media/videos/failure_2_seed2000_ep008.mp4"
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.0,
+      "min_eef_red_distance_m": 0.02537,
+      "grasped_steps": 0,
+      "max_consecutive_lift_grasp_steps": 0,
+      "return_value": 0.0,
+      "failure_reason": "reached_but_no_grasp_detected",
+      "seed": 2000,
+      "episode": 9,
+      "video": "results/bc_eval_multiseed_media/videos/failure_3_seed2000_ep009.mp4"
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.00104,
+      "min_eef_red_distance_m": 0.02733,
+      "grasped_steps": 0,
+      "max_consecutive_lift_grasp_steps": 0,
+      "return_value": 0.0,
+      "failure_reason": "reached_but_no_grasp_detected",
+      "seed": 2000,
+      "episode": 17
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.00113,
+      "min_eef_red_distance_m": 0.02537,
+      "grasped_steps": 3,
+      "max_consecutive_lift_grasp_steps": 0,
+      "return_value": 0.0,
+      "failure_reason": "grasp_detected_insufficient_lift",
+      "seed": 2000,
+      "episode": 25
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.0,
+      "min_eef_red_distance_m": 0.02536,
+      "grasped_steps": 0,
+      "max_consecutive_lift_grasp_steps": 0,
+      "return_value": 0.0,
+      "failure_reason": "reached_but_no_grasp_detected",
+      "seed": 2000,
+      "episode": 27
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.0,
+      "min_eef_red_distance_m": 0.02562,
+      "grasped_steps": 0,
+      "max_consecutive_lift_grasp_steps": 0,
+      "return_value": 0.0,
+      "failure_reason": "reached_but_no_grasp_detected",
+      "seed": 2000,
+      "episode": 35
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.08515,
+      "min_eef_red_distance_m": 0.02327,
+      "grasped_steps": 20,
+      "max_consecutive_lift_grasp_steps": 0,
+      "return_value": 0.0,
+      "failure_reason": "grasp_detected_insufficient_lift",
+      "seed": 2000,
+      "episode": 36
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.0783,
+      "min_eef_red_distance_m": 0.02474,
+      "grasped_steps": 23,
+      "max_consecutive_lift_grasp_steps": 0,
+      "return_value": 0.0,
+      "failure_reason": "grasp_detected_insufficient_lift",
+      "seed": 2000,
+      "episode": 44
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.2006,
+      "min_eef_red_distance_m": 0.02433,
+      "grasped_steps": 25,
+      "max_consecutive_lift_grasp_steps": 3,
+      "return_value": 22.0,
+      "failure_reason": "lifted_but_not_held_long_enough",
+      "seed": 2000,
+      "episode": 46
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.0,
+      "min_eef_red_distance_m": 0.02477,
+      "grasped_steps": 0,
+      "max_consecutive_lift_grasp_steps": 0,
+      "return_value": 0.0,
+      "failure_reason": "reached_but_no_grasp_detected",
+      "seed": 2000,
+      "episode": 49
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.09812,
+      "min_eef_red_distance_m": 0.02084,
+      "grasped_steps": 33,
+      "max_consecutive_lift_grasp_steps": 0,
+      "return_value": 2.0,
+      "failure_reason": "grasp_detected_insufficient_lift",
+      "seed": 3000,
+      "episode": 21
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.0,
+      "min_eef_red_distance_m": 0.02639,
+      "grasped_steps": 0,
+      "max_consecutive_lift_grasp_steps": 0,
+      "return_value": 0.0,
+      "failure_reason": "reached_but_no_grasp_detected",
+      "seed": 3000,
+      "episode": 30
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.0,
+      "min_eef_red_distance_m": 0.02474,
+      "grasped_steps": 0,
+      "max_consecutive_lift_grasp_steps": 0,
+      "return_value": 0.0,
+      "failure_reason": "reached_but_no_grasp_detected",
+      "seed": 3000,
+      "episode": 46
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.12291,
+      "min_eef_red_distance_m": 0.02516,
+      "grasped_steps": 16,
+      "max_consecutive_lift_grasp_steps": 2,
+      "return_value": 5.0,
+      "failure_reason": "lifted_but_not_held_long_enough",
+      "seed": 4000,
+      "episode": 1
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.0,
+      "min_eef_red_distance_m": 0.02618,
+      "grasped_steps": 0,
+      "max_consecutive_lift_grasp_steps": 0,
+      "return_value": 0.0,
+      "failure_reason": "reached_but_no_grasp_detected",
+      "seed": 4000,
+      "episode": 10
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.07136,
+      "min_eef_red_distance_m": 0.02355,
+      "grasped_steps": 3,
+      "max_consecutive_lift_grasp_steps": 0,
+      "return_value": 0.0,
+      "failure_reason": "grasp_detected_insufficient_lift",
+      "seed": 4000,
+      "episode": 24
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.04526,
+      "min_eef_red_distance_m": 0.02268,
+      "grasped_steps": 8,
+      "max_consecutive_lift_grasp_steps": 0,
+      "return_value": 0.0,
+      "failure_reason": "grasp_detected_insufficient_lift",
+      "seed": 4000,
+      "episode": 49
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.17091,
+      "min_eef_red_distance_m": 0.02439,
+      "grasped_steps": 18,
+      "max_consecutive_lift_grasp_steps": 4,
+      "return_value": 12.0,
+      "failure_reason": "lifted_but_not_held_long_enough",
+      "seed": 5000,
+      "episode": 48
+    }
+  ],
+  "recommendations": {
+    "did_not_reach_target": "Inspect end-effector trajectories and workspace coverage.",
+    "reached_but_no_grasp_detected": "Inspect approach angle, gripper timing and closing width.",
+    "grasp_detected_insufficient_lift": "Inspect post-grasp motion and slippage.",
+    "lifted_but_not_held_long_enough": "Inspect hold duration, premature release and oscillation."
+  }
+}

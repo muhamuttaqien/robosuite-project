@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Datasets
+datasets/
+*.hdf5
+*.h5
+
+# Model checkpoints
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+
+# Weights & Biases
+wandb/
+
+# Generated videos (keep GIF previews)
+*.mp4
+*.avi
+*.mov
+
+# Logs
+*.log
+logs/
+
+# Results
+# Keep evaluation CSV, JSON, Markdown, and PNG charts
+results/**/videos/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

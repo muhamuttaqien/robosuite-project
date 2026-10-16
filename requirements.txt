@@ -1,0 +1,29 @@
+# Simulation
+robosuite==1.5.2
+mujoco==3.3.0
+
+# Imitation Learning
+robomimic @ git+https://github.com/ARISE-Initiative/robomimic.git@v0.5.0
+
+# Deep Learning
+torch
+torchvision
+
+# Data Processing
+numpy
+h5py
+pandas
+
+# Image and Video
+imageio
+imageio-ffmpeg
+opencv-python
+Pillow
+
+# Experiment Tracking
+wandb
+
+# Utilities
+tqdm
+matplotlib
+

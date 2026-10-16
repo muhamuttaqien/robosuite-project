@@ -1,0 +1,415 @@
+{
+  "checkpoint": "checkpoints/red_cube_bc/20261016174716/models/model_epoch_200.pth",
+  "episodes": 50,
+  "seed": 3000,
+  "arm_noise": 0.04,
+  "lift_height_m": 0.1,
+  "hold_steps": 10,
+  "max_steps": 300,
+  "successes": 47,
+  "success_rate": 0.94,
+  "avg_episode_steps": 109.66,
+  "avg_max_red_lift_m": 0.17571799999999999,
+  "episodes_detail": [
+    {
+      "success": 1,
+      "steps": 82,
+      "max_red_lift_m": 0.1824,
+      "min_eef_red_distance_m": 0.0231,
+      "return": 11.0,
+      "episode": 0
+    },
+    {
+      "success": 1,
+      "steps": 87,
+      "max_red_lift_m": 0.1838,
+      "min_eef_red_distance_m": 0.0168,
+      "return": 11.0,
+      "episode": 1
+    },
+    {
+      "success": 1,
+      "steps": 62,
+      "max_red_lift_m": 0.1858,
+      "min_eef_red_distance_m": 0.019,
+      "return": 11.0,
+      "episode": 2
+    },
+    {
+      "success": 1,
+      "steps": 91,
+      "max_red_lift_m": 0.1855,
+      "min_eef_red_distance_m": 0.0206,
+      "return": 11.0,
+      "episode": 3
+    },
+    {
+      "success": 1,
+      "steps": 87,
+      "max_red_lift_m": 0.1838,
+      "min_eef_red_distance_m": 0.022,
+      "return": 11.0,
+      "episode": 4
+    },
+    {
+      "success": 1,
+      "steps": 91,
+      "max_red_lift_m": 0.1838,
+      "min_eef_red_distance_m": 0.0223,
+      "return": 11.0,
+      "episode": 5
+    },
+    {
+      "success": 1,
+      "steps": 78,
+      "max_red_lift_m": 0.1821,
+      "min_eef_red_distance_m": 0.0238,
+      "return": 11.0,
+      "episode": 6
+    },
+    {
+      "success": 1,
+      "steps": 89,
+      "max_red_lift_m": 0.1858,
+      "min_eef_red_distance_m": 0.0217,
+      "return": 11.0,
+      "episode": 7
+    },
+    {
+      "success": 1,
+      "steps": 64,
+      "max_red_lift_m": 0.1841,
+      "min_eef_red_distance_m": 0.0204,
+      "return": 11.0,
+      "episode": 8
+    },
+    {
+      "success": 1,
+      "steps": 88,
+      "max_red_lift_m": 0.1842,
+      "min_eef_red_distance_m": 0.0192,
+      "return": 11.0,
+      "episode": 9
+    },
+    {
+      "success": 1,
+      "steps": 85,
+      "max_red_lift_m": 0.1798,
+      "min_eef_red_distance_m": 0.022,
+      "return": 11.0,
+      "episode": 10
+    },
+    {
+      "success": 1,
+      "steps": 89,
+      "max_red_lift_m": 0.179,
+      "min_eef_red_distance_m": 0.022,
+      "return": 11.0,
+      "episode": 11
+    },
+    {
+      "success": 1,
+      "steps": 87,
+      "max_red_lift_m": 0.1846,
+      "min_eef_red_distance_m": 0.0196,
+      "return": 11.0,
+      "episode": 12
+    },
+    {
+      "success": 1,
+      "steps": 84,
+      "max_red_lift_m": 0.187,
+      "min_eef_red_distance_m": 0.0225,
+      "return": 12.0,
+      "episode": 13
+    },
+    {
+      "success": 1,
+      "steps": 77,
+      "max_red_lift_m": 0.1819,
+      "min_eef_red_distance_m": 0.0216,
+      "return": 11.0,
+      "episode": 14
+    },
+    {
+      "success": 1,
+      "steps": 88,
+      "max_red_lift_m": 0.1871,
+      "min_eef_red_distance_m": 0.0212,
+      "return": 11.0,
+      "episode": 15
+    },
+    {
+      "success": 1,
+      "steps": 147,
+      "max_red_lift_m": 0.1801,
+      "min_eef_red_distance_m": 0.0238,
+      "return": 24.0,
+      "episode": 16
+    },
+    {
+      "success": 1,
+      "steps": 150,
+      "max_red_lift_m": 0.1905,
+      "min_eef_red_distance_m": 0.0192,
+      "return": 32.0,
+      "episode": 17
+    },
+    {
+      "success": 1,
+      "steps": 79,
+      "max_red_lift_m": 0.1903,
+      "min_eef_red_distance_m": 0.0184,
+      "return": 12.0,
+      "episode": 18
+    },
+    {
+      "success": 1,
+      "steps": 145,
+      "max_red_lift_m": 0.1887,
+      "min_eef_red_distance_m": 0.02,
+      "return": 21.0,
+      "episode": 19
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.0981,
+      "min_eef_red_distance_m": 0.0208,
+      "return": 2.0,
+      "episode": 20
+    },
+    {
+      "success": 1,
+      "steps": 94,
+      "max_red_lift_m": 0.1869,
+      "min_eef_red_distance_m": 0.0201,
+      "return": 11.0,
+      "episode": 21
+    },
+    {
+      "success": 1,
+      "steps": 89,
+      "max_red_lift_m": 0.1806,
+      "min_eef_red_distance_m": 0.021,
+      "return": 11.0,
+      "episode": 22
+    },
+    {
+      "success": 1,
+      "steps": 151,
+      "max_red_lift_m": 0.1851,
+      "min_eef_red_distance_m": 0.0235,
+      "return": 22.0,
+      "episode": 23
+    },
+    {
+      "success": 1,
+      "steps": 89,
+      "max_red_lift_m": 0.1825,
+      "min_eef_red_distance_m": 0.0228,
+      "return": 11.0,
+      "episode": 24
+    },
+    {
+      "success": 1,
+      "steps": 193,
+      "max_red_lift_m": 0.1822,
+      "min_eef_red_distance_m": 0.0226,
+      "return": 14.0,
+      "episode": 25
+    },
+    {
+      "success": 1,
+      "steps": 82,
+      "max_red_lift_m": 0.1877,
+      "min_eef_red_distance_m": 0.0187,
+      "return": 11.0,
+      "episode": 26
+    },
+    {
+      "success": 1,
+      "steps": 95,
+      "max_red_lift_m": 0.1823,
+      "min_eef_red_distance_m": 0.0245,
+      "return": 11.0,
+      "episode": 27
+    },
+    {
+      "success": 1,
+      "steps": 87,
+      "max_red_lift_m": 0.1872,
+      "min_eef_red_distance_m": 0.0223,
+      "return": 12.0,
+      "episode": 28
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.0,
+      "min_eef_red_distance_m": 0.0264,
+      "return": 0.0,
+      "episode": 29
+    },
+    {
+      "success": 1,
+      "steps": 64,
+      "max_red_lift_m": 0.1838,
+      "min_eef_red_distance_m": 0.0206,
+      "return": 11.0,
+      "episode": 30
+    },
+    {
+      "success": 1,
+      "steps": 89,
+      "max_red_lift_m": 0.1853,
+      "min_eef_red_distance_m": 0.0195,
+      "return": 11.0,
+      "episode": 31
+    },
+    {
+      "success": 1,
+      "steps": 61,
+      "max_red_lift_m": 0.186,
+      "min_eef_red_distance_m": 0.0174,
+      "return": 11.0,
+      "episode": 32
+    },
+    {
+      "success": 1,
+      "steps": 98,
+      "max_red_lift_m": 0.1824,
+      "min_eef_red_distance_m": 0.0192,
+      "return": 11.0,
+      "episode": 33
+    },
+    {
+      "success": 1,
+      "steps": 89,
+      "max_red_lift_m": 0.1819,
+      "min_eef_red_distance_m": 0.0213,
+      "return": 11.0,
+      "episode": 34
+    },
+    {
+      "success": 1,
+      "steps": 74,
+      "max_red_lift_m": 0.1829,
+      "min_eef_red_distance_m": 0.0212,
+      "return": 11.0,
+      "episode": 35
+    },
+    {
+      "success": 1,
+      "steps": 90,
+      "max_red_lift_m": 0.1834,
+      "min_eef_red_distance_m": 0.023,
+      "return": 11.0,
+      "episode": 36
+    },
+    {
+      "success": 1,
+      "steps": 84,
+      "max_red_lift_m": 0.1865,
+      "min_eef_red_distance_m": 0.0179,
+      "return": 11.0,
+      "episode": 37
+    },
+    {
+      "success": 1,
+      "steps": 88,
+      "max_red_lift_m": 0.187,
+      "min_eef_red_distance_m": 0.0235,
+      "return": 11.0,
+      "episode": 38
+    },
+    {
+      "success": 1,
+      "steps": 89,
+      "max_red_lift_m": 0.1853,
+      "min_eef_red_distance_m": 0.0177,
+      "return": 11.0,
+      "episode": 39
+    },
+    {
+      "success": 1,
+      "steps": 193,
+      "max_red_lift_m": 0.1863,
+      "min_eef_red_distance_m": 0.0238,
+      "return": 11.0,
+      "episode": 40
+    },
+    {
+      "success": 1,
+      "steps": 95,
+      "max_red_lift_m": 0.188,
+      "min_eef_red_distance_m": 0.0214,
+      "return": 11.0,
+      "episode": 41
+    },
+    {
+      "success": 1,
+      "steps": 92,
+      "max_red_lift_m": 0.1868,
+      "min_eef_red_distance_m": 0.0203,
+      "return": 12.0,
+      "episode": 42
+    },
+    {
+      "success": 1,
+      "steps": 157,
+      "max_red_lift_m": 0.1831,
+      "min_eef_red_distance_m": 0.0203,
+      "return": 11.0,
+      "episode": 43
+    },
+    {
+      "success": 1,
+      "steps": 164,
+      "max_red_lift_m": 0.1887,
+      "min_eef_red_distance_m": 0.0198,
+      "return": 33.0,
+      "episode": 44
+    },
+    {
+      "success": 0,
+      "steps": 300,
+      "max_red_lift_m": 0.0,
+      "min_eef_red_distance_m": 0.0247,
+      "return": 0.0,
+      "episode": 45
+    },
+    {
+      "success": 1,
+      "steps": 84,
+      "max_red_lift_m": 0.1868,
+      "min_eef_red_distance_m": 0.0202,
+      "return": 12.0,
+      "episode": 46
+    },
+    {
+      "success": 1,
+      "steps": 65,
+      "max_red_lift_m": 0.1862,
+      "min_eef_red_distance_m": 0.0186,
+      "return": 11.0,
+      "episode": 47
+    },
+    {
+      "success": 1,
+      "steps": 92,
+      "max_red_lift_m": 0.1861,
+      "min_eef_red_distance_m": 0.021,
+      "return": 12.0,
+      "episode": 48
+    },
+    {
+      "success": 1,
+      "steps": 85,
+      "max_red_lift_m": 0.1865,
+      "min_eef_red_distance_m": 0.0239,
+      "return": 12.0,
+      "episode": 49
+    }
+  ]
+}
