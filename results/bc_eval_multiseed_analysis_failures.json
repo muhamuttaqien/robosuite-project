@@ -61,7 +61,8 @@
       "return_value": 0.0,
       "failure_reason": "reached_but_no_grasp_detected",
       "seed": 2000,
-      "episode": 17
+      "episode": 17,
+      "video": "results/bc_eval_multiseed_media/videos/failure_4_seed2000_ep017.mp4"
     },
     {
       "success": 0,

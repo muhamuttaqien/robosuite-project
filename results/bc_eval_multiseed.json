@@ -115,7 +115,8 @@
       "return_value": 11.0,
       "failure_reason": "success",
       "seed": 2000,
-      "episode": 5
+      "episode": 5,
+      "video": "results/bc_eval_multiseed_media/videos/success_4_seed2000_ep005.mp4"
     },
     {
       "success": 1,
@@ -261,7 +262,8 @@
       "return_value": 0.0,
       "failure_reason": "reached_but_no_grasp_detected",
       "seed": 2000,
-      "episode": 17
+      "episode": 17,
+      "video": "results/bc_eval_multiseed_media/videos/failure_4_seed2000_ep017.mp4"
     },
     {
       "success": 1,
@@ -3076,6 +3078,11 @@
         "path": "results/bc_eval_multiseed_media/videos/success_3_seed2000_ep004.mp4",
         "seed": 2000,
         "episode": 4
+      },
+      {
+        "path": "results/bc_eval_multiseed_media/videos/success_4_seed2000_ep005.mp4",
+        "seed": 2000,
+        "episode": 5
       }
     ],
     "failure": [
@@ -3093,6 +3100,11 @@
         "path": "results/bc_eval_multiseed_media/videos/failure_3_seed2000_ep009.mp4",
         "seed": 2000,
         "episode": 9
+      },
+      {
+        "path": "results/bc_eval_multiseed_media/videos/failure_4_seed2000_ep017.mp4",
+        "seed": 2000,
+        "episode": 17
       }
     ]
   }

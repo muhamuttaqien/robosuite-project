@@ -34,23 +34,29 @@ The BC policy is trained using successful trajectories collected by a scripted e
 
 Failure breakdown: 9 grasp failures, 7 insufficient-lift failures, and 3 insufficient-hold failures (heuristic classifications).
 
-[View evaluation results, images, and videos on W&B](https://wandb.ai/muhamuttaqien/robosuite-project/runs/atyi069p)
+[View full evaluation results on W&B](https://wandb.ai/muhamuttaqien/robosuite-project/runs/atyi069p)
 
-### Example Rollouts
+### Successful Rollouts
 
-**Successful demonstrations**
+<table>
+  <tr>
+    <td><img src="assets/success_1.gif" width="100%"></td>
+    <td><img src="assets/success_2.gif" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="assets/success_3.gif" width="100%"></td>
+    <td><img src="assets/success_4.gif" width="100%"></td>
+  </tr>
+</table>
 
-![Successful rollout 1](assets/success_1.gif)
-![Successful rollout 2](assets/success_2.gif)
-![Successful rollout 3](assets/success_3.gif)
+### Failed Rollouts
 
-**Failed demonstrations**
-
-![Failed rollout 1](assets/failure_1.gif)
-![Failed rollout 2](assets/failure_2.gif)
-![Failed rollout 3](assets/failure_3.gif)
-
-*GIF previews require generating the files from the recorded evaluation videos.*
+<table>
+  <tr>
+    <td><img src="assets/failure_1.gif" width="100%"></td>
+    <td><img src="assets/failure_2.gif" width="100%"></td>
+  </tr>
+</table>
 
 ## Installation
 
@@ -85,30 +91,18 @@ python scripts/train_bc.py \
 
 **3. Evaluate BC**
 
-Replace `<checkpoint.pth>` with your trained checkpoint path.
-
 ```bash
 python scripts/evaluate_bc.py \
-    --checkpoint <checkpoint.pth> \
+    --checkpoint checkpoints/red_cube_bc/<run>/models/model_epoch_200.pth \
     --episodes 50 \
     --seeds 2000 3000 4000 5000 6000 \
     --save-videos \
-    --videos-per-outcome 3 \
     --wandb \
     --wandb-project robosuite-project
 ```
-
-## Experiment Tracking
-
-Training metrics, evaluation results, failure analysis, and rollout videos are tracked using [Weights & Biases](https://wandb.ai/muhamuttaqien/robosuite-project).
 
 ## Future Work
 
 - Action Chunking Transformer (ACT)
 - Diffusion Policy
 - World Model-guided manipulation
-
-## References
-
-- [robosuite](https://github.com/ARISE-Initiative/robosuite)
-- [robomimic](https://github.com/ARISE-Initiative/robomimic)

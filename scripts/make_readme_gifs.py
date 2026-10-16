@@ -1,59 +1,81 @@
+
 #!/usr/bin/env python3
-"""Create lightweight inline README GIF previews from evaluation MP4 clips."""
+"""Convert BC evaluation videos into GIF previews for GitHub README."""
+
 import argparse
 from pathlib import Path
+
 import imageio.v2 as imageio
 from PIL import Image
 
 
-def create_gif(src, dst, width=420, fps=8, frame_stride=4, max_frames=90):
-    reader = imageio.get_reader(str(src))
+def convert_to_gif(source, destination, width=320, stride=3, fps=8):
+    reader = imageio.get_reader(str(source))
     frames = []
+
     try:
         for index, frame in enumerate(reader):
-            if index % frame_stride:
+            if index % stride != 0:
                 continue
-            img = Image.fromarray(frame).convert('RGB')
-            h = max(1, round(img.height * width / img.width))
-            frames.append(img.resize((width, h)))
-            if len(frames) >= max_frames:
-                break
+
+            image = Image.fromarray(frame).convert("RGB")
+            height = round(image.height * width / image.width)
+            image = image.resize((width, height), Image.Resampling.LANCZOS)
+            frames.append(image)
+
     finally:
         reader.close()
+
     if not frames:
-        raise ValueError(f'No frames in {src}')
-    dst.parent.mkdir(parents=True, exist_ok=True)
-    frames[0].save(dst, save_all=True, append_images=frames[1:], duration=1000 // fps, loop=0, optimize=True)
+        raise RuntimeError(f"No frames found in {source}")
+
+    destination.parent.mkdir(parents=True, exist_ok=True)
+
+    frames[0].save(
+        destination,
+        save_all=True,
+        append_images=frames[1:],
+        duration=round(1000 / fps),
+        loop=0,
+        optimize=True,
+    )
+
+    print(f"Created: {destination}")
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--videos-dir', default='results/bc_eval_multiseed_media/videos')
-    parser.add_argument('--width', type=int, default=420)
+    parser.add_argument(
+        "--videos-dir",
+        default="results/bc_eval_multiseed_media/videos",
+    )
+    parser.add_argument("--output-dir", default="assets")
+    parser.add_argument("--width", type=int, default=320)
+    parser.add_argument("--stride", type=int, default=3)
     args = parser.parse_args()
-    root = Path(__file__).resolve().parents[1]
-    video_dir = root / args.videos_dir
-    assets = root / 'assets'
-    text = (root / 'README.md').read_text()
-    snippets = []
-    for label in ['success', 'failure']:
-        files = sorted(video_dir.glob(f'{label}_*.mp4'))[:3]
-        snippets.append(f'**{label.title()} examples**')
-        for idx, src in enumerate(files, 1):
-            rel = f'assets/{label}_{idx}.gif'
-            create_gif(src, root / rel, width=args.width)
-            snippets.append(f'![{label} rollout {idx}]({rel})')
-        if not files:
-            snippets.append(f'No {label} MP4 files found. [View uploaded videos on W&B](https://wandb.ai/muhamuttaqien/robosuite-project/runs/atyi069p).')
-        snippets.append('')
-    start, end = '<!-- PREVIEW_START -->', '<!-- PREVIEW_END -->'
-    if start not in text or end not in text:
-        raise RuntimeError('Missing README preview markers')
-    a, remainder = text.split(start, 1)
-    _, b = remainder.split(end, 1)
-    (root / 'README.md').write_text(a + start + '\n' + '\n'.join(snippets) + end + b)
-    print('Updated README preview gallery. Review GIF sizes before committing.')
+
+    video_dir = Path(args.videos_dir)
+    output_dir = Path(args.output_dir)
+
+    for label, count in [("success", 4), ("failure", 2)]:
+        videos = sorted(video_dir.glob(f"{label}_*.mp4"))
+
+        if len(videos) < count:
+            print(
+                f"Warning: Found {len(videos)} {label} videos; "
+                f"requested {count}."
+            )
+
+        for index, video in enumerate(videos[:count], start=1):
+            destination = output_dir / f"{label}_{index}.gif"
+
+            convert_to_gif(
+                video,
+                destination,
+                width=args.width,
+                stride=args.stride,
+            )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
