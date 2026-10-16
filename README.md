@@ -1,8 +1,6 @@
 # Robosuite Project
 
-Robotic manipulation experiments using **robosuite**, **robomimic**, and the **Franka Panda** robot in MuJoCo.
-
-This project investigates imitation learning for robotic manipulation, starting with **Behavioral Cloning (BC)** and extending toward ACT and Diffusion Policy.
+Robotic manipulation experiments using **robosuite**, **robomimic**, and the **Franka Panda** robot in MuJoCo. This project investigates imitation learning for robotic manipulation, starting with **Behavioral Cloning (BC)** and extending toward ACT and Diffusion Policy.
 
 ## Task Overview
 
