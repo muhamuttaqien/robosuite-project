@@ -104,3 +104,4 @@ python scripts/evaluate_bc.py \
 - Action Chunking Transformer (ACT)
 - Diffusion Policy
 - World Model-guided manipulation
+
